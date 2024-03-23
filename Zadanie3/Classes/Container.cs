@@ -10,7 +10,7 @@ namespace Zadanie3.Classes
         string containerType,
         Product product)
     {
-        private static int _nextId = 0;
+        private static int _nextId;
         public double CargoWeight { get; set; }
         public double Height { get; set; }
         public double ContainerWeight { get; set; }

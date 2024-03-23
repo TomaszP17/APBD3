@@ -20,11 +20,11 @@ public class ContainerShip(
     {
         if (Containers.Count >= MaxNumberOfContainers)
         {
-            SendNotifier("You try to load too many containers.");
+            SendNotifier("Probujesz przeladowac kontener");
         }
         else if (CurrentWeightOfContainers + container.ContainerWeight > MaxWeightOfContainers)
         {
-            SendNotifier("You try to load too heavy container.");
+            SendNotifier("Za duza waga kontenerow nie uniesie tego");
         }
         else
         {
@@ -47,7 +47,7 @@ public class ContainerShip(
         }
         else
         {
-            SendNotifier("You try to unload container that is not on the ship.");
+            SendNotifier("nie ma tego kontenera na tym statku");
         }
     }
     
@@ -71,7 +71,7 @@ public class ContainerShip(
         }
         else
         {
-            SendNotifier("You try to transfer container that is not on the ship.");
+            SendNotifier("transferuj kontener ktorego nie ma na tym statku");
         }
     }
     
